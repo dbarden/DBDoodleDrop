@@ -137,8 +137,12 @@
 		D02DE9F017381E63009094A0 /* vec4.c in Sources */ = {isa = PBXBuildFile; fileRef = D02DE9EF17381E63009094A0 /* vec4.c */; };
 		D02DE9F517381E63009094A0 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = D02DE9F417381E63009094A0 /* main.m */; };
 		D02DE9F817381E63009094A0 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = D02DE9F717381E63009094A0 /* AppDelegate.m */; };
-		D02DE9FB17381E63009094A0 /* HelloWorldLayer.m in Sources */ = {isa = PBXBuildFile; fileRef = D02DE9FA17381E63009094A0 /* HelloWorldLayer.m */; };
 		D02DE9FE17381E63009094A0 /* IntroLayer.m in Sources */ = {isa = PBXBuildFile; fileRef = D02DE9FD17381E63009094A0 /* IntroLayer.m */; };
+		D02DEA0717381F10009094A0 /* GameScene.m in Sources */ = {isa = PBXBuildFile; fileRef = D02DEA0617381F10009094A0 /* GameScene.m */; };
+		D02DEA09173821CF009094A0 /* alien.png in Resources */ = {isa = PBXBuildFile; fileRef = D02DEA08173821CF009094A0 /* alien.png */; };
+		D02DEA0B17384AE9009094A0 /* spider.png in Resources */ = {isa = PBXBuildFile; fileRef = D02DEA0A17384AE9009094A0 /* spider.png */; };
+		D02DEA0E1738543B009094A0 /* alien-sfx.caf in Resources */ = {isa = PBXBuildFile; fileRef = D02DEA0C1738543B009094A0 /* alien-sfx.caf */; };
+		D02DEA0F1738543B009094A0 /* blues.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = D02DEA0D1738543B009094A0 /* blues.mp3 */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -416,10 +420,14 @@
 		D02DE9F417381E63009094A0 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		D02DE9F617381E63009094A0 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		D02DE9F717381E63009094A0 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		D02DE9F917381E63009094A0 /* HelloWorldLayer.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HelloWorldLayer.h; sourceTree = "<group>"; };
-		D02DE9FA17381E63009094A0 /* HelloWorldLayer.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HelloWorldLayer.m; sourceTree = "<group>"; };
 		D02DE9FC17381E63009094A0 /* IntroLayer.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = IntroLayer.h; sourceTree = "<group>"; };
 		D02DE9FD17381E63009094A0 /* IntroLayer.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = IntroLayer.m; sourceTree = "<group>"; };
+		D02DEA0517381F10009094A0 /* GameScene.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GameScene.h; sourceTree = "<group>"; };
+		D02DEA0617381F10009094A0 /* GameScene.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GameScene.m; sourceTree = "<group>"; };
+		D02DEA08173821CF009094A0 /* alien.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = alien.png; sourceTree = "<group>"; };
+		D02DEA0A17384AE9009094A0 /* spider.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = spider.png; sourceTree = "<group>"; };
+		D02DEA0C1738543B009094A0 /* alien-sfx.caf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "alien-sfx.caf"; sourceTree = "<group>"; };
+		D02DEA0D1738543B009094A0 /* blues.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = blues.mp3; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -478,10 +486,9 @@
 		D02DE86817381E5E009094A0 /* DoodleDrop */ = {
 			isa = PBXGroup;
 			children = (
+				D02DEA0417381EB5009094A0 /* Classes */,
 				D02DE9F617381E63009094A0 /* AppDelegate.h */,
 				D02DE9F717381E63009094A0 /* AppDelegate.m */,
-				D02DE9F917381E63009094A0 /* HelloWorldLayer.h */,
-				D02DE9FA17381E63009094A0 /* HelloWorldLayer.m */,
 				D02DE9FC17381E63009094A0 /* IntroLayer.h */,
 				D02DE9FD17381E63009094A0 /* IntroLayer.m */,
 				D02DE86917381E5E009094A0 /* Resources */,
@@ -494,6 +501,10 @@
 		D02DE86917381E5E009094A0 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				D02DEA0C1738543B009094A0 /* alien-sfx.caf */,
+				D02DEA0D1738543B009094A0 /* blues.mp3 */,
+				D02DEA0A17384AE9009094A0 /* spider.png */,
+				D02DEA08173821CF009094A0 /* alien.png */,
 				D02DE86A17381E5E009094A0 /* Default.png */,
 				D02DE86C17381E5E009094A0 /* Default@2x.png */,
 				D02DE86E17381E5E009094A0 /* Default-568h@2x.png */,
@@ -870,6 +881,15 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
+		D02DEA0417381EB5009094A0 /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				D02DEA0517381F10009094A0 /* GameScene.h */,
+				D02DEA0617381F10009094A0 /* GameScene.m */,
+			);
+			name = Classes;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -933,6 +953,10 @@
 				D02DE87D17381E5E009094A0 /* Icon@2x.png in Resources */,
 				D02DE88017381E5F009094A0 /* iTunesArtwork in Resources */,
 				D02DE9D617381E63009094A0 /* ChangeLog in Resources */,
+				D02DEA09173821CF009094A0 /* alien.png in Resources */,
+				D02DEA0B17384AE9009094A0 /* spider.png in Resources */,
+				D02DEA0E1738543B009094A0 /* alien-sfx.caf in Resources */,
+				D02DEA0F1738543B009094A0 /* blues.mp3 in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1052,8 +1076,8 @@
 				D02DE9F017381E63009094A0 /* vec4.c in Sources */,
 				D02DE9F517381E63009094A0 /* main.m in Sources */,
 				D02DE9F817381E63009094A0 /* AppDelegate.m in Sources */,
-				D02DE9FB17381E63009094A0 /* HelloWorldLayer.m in Sources */,
 				D02DE9FE17381E63009094A0 /* IntroLayer.m in Sources */,
+				D02DEA0717381F10009094A0 /* GameScene.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
